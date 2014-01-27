@@ -3,5 +3,11 @@
 
     <string name="hello">Hello World, AndroidConnectingToPhpMySQLActivity!</string>
     <string name="app_name">MainScreen</string>
+    <string name="image">Image</string>
+    <string name="selectImage">Odaberi sliku</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="snimi">Snimi</string>
 
 </resources>

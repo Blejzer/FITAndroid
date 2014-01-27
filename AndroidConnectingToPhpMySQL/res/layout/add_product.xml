@@ -3,11 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1" >
+
+        <ImageView
+            android:id="@+id/imageView_pic"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/image"
+            android:textSize="17dip" />
+    </GridLayout>
+    
+    <!-- Image button -->
+    <Button
+         android:id="@+id/button_selectpic"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/selectImage" />    
     
     <!-- Name Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:text="@string/product_name"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
@@ -24,7 +56,7 @@
 	<!-- Price Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="@string/price"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
@@ -42,25 +74,27 @@
 	<!-- Description Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Description"
+        android:text="@string/description"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
         android:textSize="17dip"/>
     
     <!-- Input description -->
-	<EditText android:id="@+id/inputDesc" 
+
+	<EditText
+	    android:id="@+id/inputDesc"
 	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
+	    android:layout_height="48dp"
 	    android:layout_margin="5dip"
 	    android:layout_marginBottom="15dip"
-	    android:lines="4"
-	    android:gravity="top"/>
+	    android:gravity="top"
+	    android:lines="4" />
 	
 	<!-- Button Create Product -->
 	<Button android:id="@+id/btnCreateProduct" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="Create Product"/>
+	    android:text="@string/snimi"/>
 	
 </LinearLayout>
